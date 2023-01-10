@@ -1,0 +1,348 @@
+/**
+* GLOBALE
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(234, 237, 237);
+    display: block;
+    flex-direction: column;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+/**
+* LOGO
+**/
+
+.logo{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(19, 25, 33);
+}
+
+.logo img{
+    padding: 15px 0 10px 15px;
+    width: 100px;
+}
+
+/**
+* BARRA DI NAVIGAZIONE 
+**/
+.nav > *{
+    text-decoration: none;
+    list-style: none;
+}
+.nav{
+    background-color: rgb(35, 47, 62);
+    width: 100%;
+    min-width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    height: 60px;
+    max-height: 120px;
+    align-items: center;
+    overflow-y: hidden;
+    line-height: 20px;
+}
+
+.nav li:first-child{
+    padding-left: 30px;
+}
+
+.home ion-icon {
+    font-size: 1.9em;
+    color: white;
+}
+
+.home, .info{ 
+    font-size: 1.5rem;
+    color: white;
+}
+
+.home ion-icon {
+    font-size: 1.9em;
+    color: white;
+}
+
+
+.info{
+    padding-right: 20px ;
+}
+
+.info:first-child{
+    padding-left: 20px ;
+}
+
+
+/**
+* RIGA GIFT
+**/
+
+.riga{
+    width: 95%;
+    height: 40px;
+    background-color: orange;
+    margin:30px 0;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/**
+* BANNER GIFT
+**/
+
+.banner{
+    width: 1280px;
+    height: 128px;
+    max-height: 100%;
+    background-image: url('img/bg-image.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.banner > *{
+    color: white;
+}
+
+.banner p{
+    margin-top: 20px;
+}
+
+
+/**
+* RIGA GIFT
+**/
+
+.riga-articoli{
+    width: 95%;
+    margin-bottom: 30px;
+    background-color: white;
+    height: auto;
+}
+
+.riga-titolo{
+    display: flex;
+    padding: 20px 0 0 20px;
+    font-weight: 800;
+}
+
+.riga-titolo p{
+    margin-right: 20px;
+}
+
+.riga-titolo a{
+    font-size: 0.8em;
+    padding-top: 5px;
+    color: rgb(87, 160, 173);
+}
+
+.riga-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 30px 30px;
+}
+
+.riga-img img{
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+
+/**
+* CONTENITORE
+**/
+
+.contenitore{
+    width: 95%;
+    min-width: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.blocco{
+    background-color: white;
+    width: 100%;
+    min-width: 10px;
+    height: auto;
+    margin-right: 20px;
+    padding:0 20px 60px 20px ;
+    
+}
+
+.blocco a{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 15px;
+    color: rgb(87, 160, 173);
+    font-weight: 600;
+} 
+
+
+.row img{
+    width: 199px;
+    min-width: 10px;
+    object-fit: cover;
+    padding-right: 15px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.blocco:last-child {
+    margin-right: 0;
+}
+
+.testo-1{
+    width: 300px;
+    
+}
+
+
+.testo-1 p{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.oggetto-1{
+    left: 30px;
+}
+
+.oggetto-2{
+    left: 170px;
+}
+
+.blocco h2{
+    margin: 20px 0 0 20px;
+}
+
+.oggetto-4{
+    left: 145px;
+}
+
+.oggetto-5{
+    left: 139px;
+}
+
+.oggetto-6{
+    left: 160px;
+}
+
+.oggetto-7{
+    left: 80px;
+}
+
+
+/**
+* BANNER GAMING E BANNER AUDIO
+**/
+.banner-gaming {
+    text-align: center;
+}
+
+.banner-gaming img{
+    display: inline-block;
+    width: 95%;
+    margin-bottom: 0px;
+}
+
+.text-4{
+    padding: 15px 30px 0 30px;
+    font-size: 1.5em;
+    font-weight: 900;
+    vertical-align: top;
+    
+
+}
+
+.text-5{
+    padding-top: 25px;
+    font-weight: 800;
+    font-size: 1em;
+    color: rgb(87, 160, 173);
+}
+
+.riga-titolo-2{
+    display: flex;
+    vertical-align: bottom;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+/**
+* FOOTER
+**/
+
+.fine{
+    height: 70px;
+    background-color: rgb(35, 47, 62);
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+.fine a{
+    color: white;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.logo-fine{
+    height: auto;
+    background-color: rgb(19, 25, 33);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.logo-fine img{
+    width: 300px;
+}
