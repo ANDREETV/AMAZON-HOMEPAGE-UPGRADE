@@ -2,25 +2,23 @@
 * GLOBALE
 **/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: rgb(234, 237, 237);
     flex-direction: column;
 }
 
-
-
-a{
+a {
     text-decoration: none;
 }
 
-main{
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,18 +26,17 @@ main{
     align-content: center;
 }
 
-
 /**
 * LOGO
 **/
 
-.logo{
+.logo {
     width: 100%;
     height: 60px;
     background-color: rgb(19, 25, 33);
 }
 
-.logo img{
+.logo img {
     padding: 15px 0 10px 15px;
     width: 100px;
 }
@@ -47,7 +44,7 @@ main{
 /**
 * BARRA DI NAVIGAZIONE 
 **/
-.nav{
+.nav {
     display: flex;
     left: 0;
     top: 0;
@@ -61,7 +58,7 @@ main{
 
 }
 
-.nav .info{
+.nav .info {
     text-decoration: none;
     color: white;
     padding: 0 20px;
@@ -70,28 +67,27 @@ main{
 
 }
 
-.nav .home{
+.nav .home {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
     vertical-align: middle;
 }
 
-ion-icon{
+ion-icon {
     vertical-align: middle;
     font-size: 2.3em;
 }
-
 
 /**
 * RIGA GIFT
 **/
 
-.riga{
+.riga {
     width: 95%;
     height: 40px;
     background-color: orange;
-    margin:30px 0;
+    margin: 30px 0;
     color: white;
     font-weight: 900;
     display: flex;
@@ -105,11 +101,11 @@ ion-icon{
 * BANNER GIFT
 **/
 
-.banner{
+.banner {
     width: 95%;
     height: 128px;
     max-height: 100%;
-    background-image: url('img/bg-image.png');
+    background-image: url("img/bg-image.png");
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -121,101 +117,97 @@ ion-icon{
     margin-bottom: 30px;
 }
 
-.banner > *{
+.banner > * {
     color: white;
 }
 
-.banner p{
+.banner p {
     margin-top: 20px;
 }
-
 
 /**
 * RIGA GIFT
 **/
 
-.riga-articoli{
+.riga-articoli {
     width: 95%;
     margin-bottom: 30px;
     background-color: white;
     height: auto;
 }
 
-.riga-titolo{
+.riga-titolo {
     display: flex;
     padding: 20px 0 0 20px;
     font-weight: 800;
 }
 
-.riga-titolo p{
+.riga-titolo p {
     margin-right: 20px;
 }
 
-.riga-titolo a{
+.riga-titolo a {
     font-size: 0.8em;
     padding-top: 5px;
     color: rgb(87, 160, 173);
 }
 
-.riga-img{
+.riga-img {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 30px 30px;
 }
 
-.riga-img img{
+.riga-img img {
     width: 95%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    
+
 }
-
-
 
 /**
 * CONTENITORE
 **/
 
-.contenitore{
+.contenitore {
     width: 95%;
     min-width: 10px;
     margin-bottom: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.blocco{
+.blocco {
     background-color: white;
     width: 100%;
     min-width: 10px;
     height: auto;
     margin-right: 20px;
-    padding:0 20px 60px 20px ;
-    
+    padding: 0 20px 60px;
+
 }
 
-.blocco a{
+.blocco a {
     display: inline-block;
     position: relative;
     top: 40px;
     left: 15px;
     color: rgb(87, 160, 173);
     font-weight: 600;
-} 
+}
 
-
-.row img{
+.row img {
     width: 199px;
     min-width: 10px;
     object-fit: cover;
     padding-right: 15px;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -225,46 +217,44 @@ ion-icon{
     margin-right: 0;
 }
 
-.testo-1{
+.testo-1 {
     width: 300px;
-    
+
 }
 
-
-.testo-1 p{
+.testo-1 p {
     display: inline-block;
     position: relative;
-    
+
 }
 
-.oggetto-1{
+.oggetto-1 {
     left: 30px;
 }
 
-.oggetto-2{
+.oggetto-2 {
     left: 170px;
 }
 
-.blocco h2{
+.blocco h2 {
     margin: 20px 0 0 20px;
 }
 
-.oggetto-4{
+.oggetto-4 {
     left: 145px;
 }
 
-.oggetto-5{
+.oggetto-5 {
     left: 139px;
 }
 
-.oggetto-6{
+.oggetto-6 {
     left: 160px;
 }
 
-.oggetto-7{
+.oggetto-7 {
     left: 80px;
 }
-
 
 /**
 * BANNER GAMING E BANNER AUDIO
@@ -273,41 +263,40 @@ ion-icon{
     text-align: center;
 }
 
-.banner-gaming img{
+.banner-gaming img {
     display: inline-block;
     width: 95%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
-.text-4{
-    padding: 15px 30px 0 30px;
+.text-4 {
+    padding: 15px 30px 0;
     font-size: 1.5em;
     font-weight: 900;
     vertical-align: top;
-    
 
 }
 
-.text-5{
+.text-5 {
     padding-top: 25px;
     font-weight: 800;
     font-size: 1em;
     color: rgb(87, 160, 173);
 }
 
-.riga-titolo-2{
+.riga-titolo-2 {
     display: flex;
     vertical-align: bottom;
     justify-content: center;
     margin-bottom: 30px;
-    
+
 }
 
 /**
 * FOOTER
 **/
 
-.fine{
+.fine {
     height: 70px;
     background-color: rgb(35, 47, 62);
     text-align: center;
@@ -315,13 +304,13 @@ ion-icon{
     color: white;
 }
 
-.fine a{
+.fine a {
     color: white;
     text-decoration: underline;
     font-weight: 900;
 }
 
-.logo-fine{
+.logo-fine {
     height: auto;
     background-color: rgb(19, 25, 33);
     color: white;
@@ -334,6 +323,6 @@ ion-icon{
     padding: 40px 0;
 }
 
-.logo-fine img{
+.logo-fine img {
     width: 300px;
 }
