@@ -12,6 +12,7 @@
 body {
     background-color: rgb(234, 237, 237);
     flex-direction: column;
+    height: 100vh;
 }
 
 a {
@@ -44,6 +45,7 @@ main {
 /**
 * BARRA DI NAVIGAZIONE 
 **/
+
 .nav {
     display: flex;
     left: 0;
@@ -87,7 +89,7 @@ ion-icon {
     width: 95%;
     height: 40px;
     background-color: orange;
-    margin: 30px 0;
+    margin: 30px 0 30px;
     color: white;
     font-weight: 900;
     display: flex;
@@ -131,129 +133,139 @@ ion-icon {
 
 .riga-articoli {
     width: 95%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-color: white;
     height: auto;
 }
 
 .riga-titolo {
-    display: flex;
     padding: 20px 0 0 20px;
     font-weight: 800;
 }
 
-.riga-titolo p {
-    margin-right: 20px;
-}
-
 .riga-titolo a {
-    font-size: 0.8em;
-    padding-top: 5px;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-left: 25px;
+    line-height: 40px;
     color: rgb(87, 160, 173);
 }
 
-.riga-img {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 30px 30px;
+.riga-titolo h1{
+    display: inline-block;
+}
+.riga-img{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
 }
 
-.riga-img img {
-    width: 95%;
+.img_shop{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    box-shadow:0 0 50px black;
+    border-radius: 30px;
+    margin: 15px 15px 0 0;
+    display: inline-block;
+}
+
+.img_shop:last-of-type {
+    margin-right:0 ;
+}
+.img_shop img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-
+    object-position: center;
 }
+
 
 /**
 * CONTENITORE
 **/
 
-.contenitore {
+.contenitore{
     width: 95%;
-    min-width: 10px;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-
+    text-align: center;
 }
 
-.blocco {
-    background-color: white;
-    width: 100%;
-    min-width: 10px;
-    height: auto;
-    margin-right: 20px;
-    padding: 0 20px 60px;
-
-}
-
-.blocco a {
+.blocco, .row{
     display: inline-block;
-    position: relative;
-    top: 40px;
-    left: 15px;
-    color: rgb(87, 160, 173);
-    font-weight: 600;
 }
 
-.row img {
-    width: 199px;
-    min-width: 10px;
-    object-fit: cover;
-    padding-right: 15px;
+.blocco{
+    width: 445px;
+    height: auto;
+    background-color: white;
+    margin-right: 4px;
+    margin-bottom: 30px;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.blocco:last-child {
+.blocco:nth-child(4) {
     margin-right: 0;
 }
 
-.testo-1 {
-    width: 300px;
-
+.blocco .row{
+    width: 100%;
 }
 
-.testo-1 p {
-    display: inline-block;
+.blocco .row img{
+    width: 45%;
+    padding: 9px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.blocco h2{
+    text-align: left;
+    padding: 15px 0 20px 25px;
+}
+.row-text{
+    text-align: left;
     position: relative;
-
+    color: black;
 }
 
-.oggetto-1 {
-    left: 30px;
+
+.row-text_1{
+    position: absolute;
+    left: 29px;
+    bottom: 1px;
 }
 
-.oggetto-2 {
-    left: 170px;
+.row-text_2{
+    position: absolute;
+    left: 240px;
+    bottom: 1px;
 }
 
-.blocco h2 {
-    margin: 20px 0 0 20px;
+.row-text_3{
+    position: absolute;
+    left: 230px;
+    bottom: 1px;
 }
 
-.oggetto-4 {
-    left: 145px;
+.row-link{
+    text-align: left;
+    margin: 50px 0 0 25px;
+    padding-bottom: 20px;
+}
+.blocco .row-link a{
+    text-align: left;
+    color: rgb(87, 160, 173);
+    font-weight: 800;
 }
 
-.oggetto-5 {
-    left: 139px;
-}
-
-.oggetto-6 {
-    left: 160px;
-}
-
-.oggetto-7 {
-    left: 80px;
+.row-text{
+    font-size: 15px;
 }
 
 /**
@@ -266,35 +278,26 @@ ion-icon {
 .banner-gaming img {
     display: inline-block;
     width: 95%;
-    margin-bottom: 0;
+    margin: 30px 0;
 }
 
-.text-4 {
-    padding: 15px 30px 0;
-    font-size: 1.5em;
+.riga-titolo-2 p{
+    color: black;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.riga-titolo-2 a p{
     font-weight: 900;
-    vertical-align: top;
-
-}
-
-.text-5 {
-    padding-top: 25px;
-    font-weight: 800;
-    font-size: 1em;
     color: rgb(87, 160, 173);
-}
-
-.riga-titolo-2 {
-    display: flex;
-    vertical-align: bottom;
-    justify-content: center;
-    margin-bottom: 30px;
-
+    margin-left: 20px;
+    font-size: 15px;
 }
 
 /**
 * FOOTER
 **/
+
 
 .fine {
     height: 70px;
@@ -302,6 +305,7 @@ ion-icon {
     text-align: center;
     line-height: 70px;
     color: white;
+    margin-top: 30px;
 }
 
 .fine a {
