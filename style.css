@@ -161,14 +161,14 @@ ion-icon {
 }
 
 .img_shop{
-    width: 300px;
-    height: 350px;
+    width: 380px;
+    height: 466px;
     position: relative;
     overflow: hidden;
     user-select: none;
-    box-shadow:0 0 50px black;
+    box-shadow: 0 0 35px black;
     border-radius: 30px;
-    margin: 15px 15px 0 0;
+    margin-right: 60px;
     display: inline-block;
 }
 
